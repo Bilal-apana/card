@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday My Sister!</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(45deg, #ffccff, #ccccff);
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 4em;
+            color: #ff0066;
+            margin: 0;
+            opacity: 0;
+            animation: fadeIn 2s forwards, glow 1s infinite alternate;
+        }
+
+        p {
+            font-size: 2em;
+            color: #6600ff;
+            opacity: 0;
+            animation: fadeIn 2s 2s forwards;
+        }
+
+        .balloons {
+            position: absolute;
+            bottom: -150px;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .balloon {
+            position: absolute;
+            bottom: -150px;
+            width: 50px;
+            height: 70px;
+            border-radius: 50%;
+            background: radial-gradient(circle at 50% 50%, #ff6666, #ff0000);
+            animation: float 7s ease-in infinite;
+        }
+
+        .balloon:nth-child(2) {
+            background: radial-gradient(circle at 50% 50%, #66ff66, #00ff00);
+            animation-duration: 8s;
+            animation-delay: 1s;
+        }
+
+        .balloon:nth-child(3) {
+            background: radial-gradient(circle at 50% 50%, #6666ff, #0000ff);
+            animation-duration: 6s;
+            animation-delay: 2s;
+        }
+
+        .balloon:nth-child(4) {
+            background: radial-gradient(circle at 50% 50%, #ffff66, #ffff00);
+            animation-duration: 9s;
+            animation-delay: 1.5s;
+        }
+
+        .balloon:nth-child(5) {
+            background: radial-gradient(circle at 50% 50%, #ff66ff, #ff00ff);
+            animation-duration: 7s;
+            animation-delay: 2.5s;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes glow {
+            to {
+                text-shadow: 0 0 20px #ff0066;
+            }
+        }
+
+        @keyframes float {
+            0% {
+                bottom: -150px;
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(30px);
+            }
+            100% {
+                bottom: 100%;
+                transform: translateX(-30px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Happy Birthday !</h1>
+        <h2>
+       <marquee behavior="left to right" direction="">(Dear Muneeba)</marquee>
+        </h2ima>
+        <p>Happy Birthday to the love of my life! 🎉 Your smile lights up my world, and your love makes every day special.  <br>
+            💖 Here's to celebrating the amazing person you are and the incredible journey we're on together  <br>
+             🌟 May this year bring you endless joy, love, and unforgettable moments. 🎂❤️
+            </p>
+            <img src="https://i.pinimg.com/564x/bf/97/54/bf97540fb55c085dbf6900512b872739.jpg" alt="Birthday">
+         
+
+    </div>
+    <div class="balloons">
+        <div class="balloon" style="left: 10%;"></div>
+        <div class="balloon" style="left: 30%;"></div>
+        <div class="balloon" style="left: 50%;"></div>
+        <div class="balloon" style="left: 70%;"></div>
+        <div class="balloon" style="left: 90%;"></div>
+        <div class="emoje" style="left: 90%;"></div>
+
+    </div>
+</body>
+</html>
